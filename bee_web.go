@@ -2,7 +2,6 @@ package main
 
 import (
     "github.com/astaxie/beego"
-    "time"
 )
 
 type MainController struct {
@@ -10,7 +9,6 @@ type MainController struct {
 }
 
 func (this *MainController) Get() {
-    time.Sleep(3 * time.Second)
     this.Ctx.WriteString("hello world")
 }
 
